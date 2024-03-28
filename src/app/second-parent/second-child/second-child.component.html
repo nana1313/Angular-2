@@ -1,0 +1,5 @@
+<h3>{{ name }}</h3>
+<div>
+  <button (click)="vote(true)" [disabled]="voted">Agree</button>
+  <button (click)="vote(false)" [disabled]="voted">Disagree</button>
+</div>

@@ -1,0 +1,8 @@
+<h1>Is earth flat?</h1>
+<h2>Agree: {{ agreed }}; Disagree: {{ disagreed }}</h2>
+<app-second-child
+  *ngFor="let voter of voters"
+  [name]="voter"
+  (onVoted)="onVoted($event)"
+  class="second-parent"
+></app-second-child>
